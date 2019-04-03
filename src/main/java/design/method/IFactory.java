@@ -1,6 +1,5 @@
 package design.method;
 
-import design.adapter.method.simple.*;
 import design.method.simple.*;
 
 /**

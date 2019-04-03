@@ -1,6 +1,5 @@
 package design.method.abstraction;
 
-import design.adapter.method.simple.*;
 import design.method.simple.*;
 
 import java.util.HashMap;

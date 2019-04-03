@@ -1,5 +1,7 @@
 package jdk11;
 
+import java.util.stream.Stream;
+
 /**
  * @ClassName StringDemo
  * @Author yaochaochen
@@ -21,6 +23,8 @@ public class StringDemo {
         "Jack".repeat(3);
         // 统计行数 lines的方法很多
         ("A\nB\n").lines().count();
+
+        Stream.ofNullable(null).count(); // 0
     }
     
 }
