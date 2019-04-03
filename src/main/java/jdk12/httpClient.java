@@ -14,7 +14,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
-public class Jdk12 {
+public class httpClient {
 
 
     HttpClient client = HttpClient.newBuilder().connectTimeout(Duration.ofMillis(500)).authenticator(new Authenticator() {
@@ -133,6 +133,8 @@ public class Jdk12 {
         CompletableFuture.allOf(futures
                 .toArray(CompletableFuture<?>[]::new))
                 .join();
+        
+        
     }
 
 }
