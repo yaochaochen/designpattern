@@ -10,3 +10,6 @@ gen
 
 
 target
+/.idea/compiler.xml
+/.idea/misc.xml
+.idea/
