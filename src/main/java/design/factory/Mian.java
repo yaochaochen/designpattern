@@ -4,13 +4,13 @@ public class Mian {
     public static void main(String[] args) {
 
         SendFactory sendFactory = new SendFactory();
-        Sender senderSms = sendFactory.produce("sms");
+        Sender senderSms = sendFactory.produceSms();
         senderSms.Send();
 
-        Sender senderEmail = sendFactory.produce("email");
+        Sender senderEmail = sendFactory.produceEmail();
         senderEmail.Send();
 
-        Sender senderExpress = sendFactory.produce("express");
+        Sender senderExpress = sendFactory.produceExpress();
         senderExpress.Send();
     }
 }
