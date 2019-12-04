@@ -6,7 +6,7 @@ package design.singleton;
 
 public class SingletonThreadSafe {
     
-    private static volatile  SingletonThreadSafe instance;
+    private static volatile  SingletonThreadSafe instance; //volatile 保证线程的可见性
     
     private SingletonThreadSafe() {
         
